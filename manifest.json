@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "First Base: The Packaged App Boilerplate",
+  "short_name": "First Base",
+  "minimum_chrome_version": "39.0",
+  "version": "2.0.1",
+  "icons": {
+    "16": "img/glass-16.png",
+    "128": "img/empty-glass.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+	{"fileSystem": ["write", "retainEntries", "directory"]},
+	"storage",
+    "webview",
+    "fullscreen",
+    "contextMenus",
+	"http://*/*"
+  ]
+}
